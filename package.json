@@ -1,0 +1,28 @@
+{
+  "name": "rtmp2",
+  "version": "0.0.1",
+  "description": " A Node.js implementation of RTMP Server ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doremeet/rtmp-server-nodejs.git"
+  },
+  "keywords": [
+    "rtmp",
+    "server"
+  ],
+  "bugs": {
+    "url": "https://github.com/doremeet/rtmp-server-nodejs/issues"
+  },
+  "homepage": "https://github.com/doremeet/rtmp-server-nodejs#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "author": "lsong",
+  "license": "MIT"
+}
