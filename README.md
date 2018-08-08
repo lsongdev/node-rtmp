@@ -13,6 +13,7 @@ npm install --save rtmp2
 # Usage 
 ```js
 const RTMP = require('rtmp2');
+
 const rtmpServer = RTMP.createServer();
 
 rtmpServer.on('client', client => {
@@ -40,10 +41,13 @@ rtmpServer.on('client', client => {
 rtmpServer.listen(1935);
 ```
 
-You can now publish streams to `rtmp://localhost:1935/live` and use any unique stream key.
+You can now publish streams to `rtmp://localhost:1935/live/mytv` and use any unique stream key.
 
-The stream will then be available at `rtmp://localhost:1935/<your stream key>`.
+```bash
+~$ ffmpeg -f avfoundation -i "1" -vcodec libx264 -f flv rtmp://localhost:1935/live/mytv
+```
 
+The stream will then be available at `rtmp://localhost:1935/live/mytv`.
 
 # License
 
