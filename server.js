@@ -135,7 +135,7 @@ class RTMPServer extends tcp.Server {
         client.closeStream();
         break;
       case 'deleteStream':
-        client.deleteStream();
+        client.deleteStream(this);
         break;
       case 'pause':
         client.pauseOrUnpauseStream();
